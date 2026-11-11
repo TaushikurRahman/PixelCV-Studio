@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Image Compressor | PixelCV Studio</title><meta name="description" content="Compress images by a target percentage or desired file size in KB."><meta name="robots" content="index,follow"><meta name="theme-color" content="#7952d5"><link rel="stylesheet" href="style.css"></head>
+<body><header class="site-header"><div class="container nav-wrap">
+<a class="brand" href="index.html" aria-label="PixelCV Studio home"><span class="brand-mark">P</span><span>PixelCV <b>Studio</b></span></a>
+<button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+<nav id="mainNav" aria-label="Main navigation"><a href="index.html">Home</a><a href="image-tools.html" class="active" aria-current="page">Image Tools</a><a href="resume.html">Resume Builder</a><a href="index.html#about">About Us</a><a href="index.html#contact">Contact</a></nav></div></header><main><section class="section container tool-page-section"><div class="section-heading"><span class="eyebrow">IMAGE TOOL 01</span><h1>Image Compressor</h1><p>Compress images by a target percentage or desired file size in KB.</p></div><section class="workspace" id="compressor">
+<div class="tool-title"><div><span class="eyebrow">TOOL 01</span><h3>Image Compressor</h3><p>Reduce file size with an adjustable quality setting.</p></div><span class="tool-icon">⇩</span></div>
+<div class="tool-layout">
+<div class="tool-controls">
+<label class="upload-box" for="compressFile"><strong>＋ Choose an image</strong><span>or drag and drop it here</span><small>JPG, PNG, WebP · Maximum 15 MB</small></label><input accept="image/jpeg,image/png,image/webp" class="file-input" id="compressFile" type="file"/>
+<div class="field"><label for="compressMode">Target mode</label><select id="compressMode"><option value="percent">Reduce by percentage</option><option value="size">Target file size</option></select></div>
+<div class="field" id="compressPercentField"><label for="targetPercent">Target reduction: <b id="targetPercentValue">50%</b></label><input id="targetPercent" max="95" min="5" type="range" value="50"/></div>
+<div class="field" hidden="" id="compressSizeField"><label for="targetSize">Target size (KB)</label><input id="targetSize" max="50000" min="1" type="number" value="200"/><p class="hint">The tool will try to get as close as possible.</p></div>
+<div class="field"><label for="quality">Maximum quality: <b id="qualityValue">90%</b></label><input id="quality" max="100" min="10" type="range" value="90"/></div>
+<button class="btn primary full" disabled="" id="compressBtn">Compress image</button><button class="btn ghost full" id="compressReset">Reset</button>
+<p aria-live="polite" class="hint" id="compressStatus">Choose an image to begin.</p>
+</div>
+<div class="preview-grid"><div class="preview-card"><h4>Original</h4><img alt="Original image preview" id="compressOriginal"/><p id="compressOriginalInfo">No image selected</p></div><div class="preview-card"><h4>Compressed result</h4><img alt="Compressed image preview" id="compressResult"/><p id="compressResultInfo">Your result will appear here</p><a class="btn secondary full disabled-link" download="pixelcv-compressed.jpg" id="compressDownload">Download result</a></div></div>
+</div>
+</section></section></main><footer class="site-footer"><div class="container footer-grid"><div><a class="brand footer-brand" href="index.html"><span class="brand-mark">P</span><span>PixelCV <b>Studio</b></span></a><p>Free Tools. Better Images. Better Resumes.</p></div><div class="footer-links"><a href="index.html">Home</a><a href="image-tools.html">Image Tools</a><a href="resume.html">Resume Builder</a><a href="index.html#about">About Us</a><a href="index.html#contact">Contact Us</a><a href="index.html#privacy">Privacy Policy</a><a href="index.html#terms">Terms and Conditions</a></div></div><div class="container copyright">© <span id="year"></span> PixelCV Studio. All rights reserved.</div></footer><script src="script.js"></script></body></html>

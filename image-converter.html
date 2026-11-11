@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Image Converter | PixelCV Studio</title><meta name="description" content="Convert images between JPG, PNG, and WebP formats."><meta name="robots" content="index,follow"><meta name="theme-color" content="#7952d5"><link rel="stylesheet" href="style.css"></head>
+<body><header class="site-header"><div class="container nav-wrap">
+<a class="brand" href="index.html" aria-label="PixelCV Studio home"><span class="brand-mark">P</span><span>PixelCV <b>Studio</b></span></a>
+<button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+<nav id="mainNav" aria-label="Main navigation"><a href="index.html">Home</a><a href="image-tools.html" class="active" aria-current="page">Image Tools</a><a href="resume.html">Resume Builder</a><a href="index.html#about">About Us</a><a href="index.html#contact">Contact</a></nav></div></header><main><section class="section container tool-page-section"><div class="section-heading"><span class="eyebrow">IMAGE TOOL 03</span><h1>Image Converter</h1><p>Convert images between JPG, PNG, and WebP formats.</p></div><section class="workspace" id="converter">
+<div class="tool-title"><div><span class="eyebrow">TOOL 03</span><h3>Image Converter</h3><p>Convert images between JPG, PNG, and WebP formats.</p></div><span class="tool-icon">⇄</span></div>
+<div class="tool-layout">
+<div class="tool-controls">
+<label class="upload-box" for="convertFile"><strong>＋ Choose an image</strong><span>JPG, PNG, WebP · Maximum 15 MB</span></label><input accept="image/jpeg,image/png,image/webp" class="file-input" id="convertFile" type="file"/>
+<div class="field"><label for="convertFormat">Output format</label><select id="convertFormat"><option value="image/png">PNG</option><option value="image/jpeg">JPG / JPEG</option><option value="image/webp">WebP</option></select></div>
+<div class="field" hidden="" id="bgField"><label for="jpegBg">JPEG background color</label><input id="jpegBg" type="color" value="#ffffff"/></div>
+<button class="btn primary full" disabled="" id="convertBtn">Convert image</button><button class="btn ghost full" id="convertReset">Reset</button><p aria-live="polite" class="hint" id="convertStatus">Choose an image to begin.</p>
+</div>
+<div class="preview-grid"><div class="preview-card"><h4>Original</h4><img alt="Original image preview" id="convertOriginal"/><p id="convertOriginalInfo">No image selected</p></div><div class="preview-card"><h4>Converted result</h4><img alt="Converted image preview" id="convertResult"/><p id="convertResultInfo">Your result will appear here</p><a class="btn secondary full disabled-link" download="pixelcv-converted.png" id="convertDownload">Download result</a></div></div>
+</div>
+</section></section></main><footer class="site-footer"><div class="container footer-grid"><div><a class="brand footer-brand" href="index.html"><span class="brand-mark">P</span><span>PixelCV <b>Studio</b></span></a><p>Free Tools. Better Images. Better Resumes.</p></div><div class="footer-links"><a href="index.html">Home</a><a href="image-tools.html">Image Tools</a><a href="resume.html">Resume Builder</a><a href="index.html#about">About Us</a><a href="index.html#contact">Contact Us</a><a href="index.html#privacy">Privacy Policy</a><a href="index.html#terms">Terms and Conditions</a></div></div><div class="container copyright">© <span id="year"></span> PixelCV Studio. All rights reserved.</div></footer><script src="script.js"></script></body></html>

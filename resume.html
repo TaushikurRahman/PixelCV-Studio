@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Resume Builder | PixelCV Studio</title><meta name="description" content="Create a professional resume with six templates and an optional profile photo."><meta name="robots" content="index,follow"><meta name="theme-color" content="#7952d5"><link rel="stylesheet" href="style.css"></head>
+<body><header class="site-header"><div class="container nav-wrap">
+<a class="brand" href="index.html" aria-label="PixelCV Studio home"><span class="brand-mark">P</span><span>PixelCV <b>Studio</b></span></a>
+<button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+<nav id="mainNav" aria-label="Main navigation"><a href="index.html">Home</a><a href="image-tools.html">Image Tools</a><a href="resume.html" class="active" aria-current="page">Resume Builder</a><a href="index.html#about">About Us</a><a href="index.html#contact">Contact</a></nav></div></header><main><section class="section resume-section"><div class="container"><div class="section-heading"><span class="eyebrow">CAREER TOOLKIT</span><h1>Build your professional resume</h1><p>Enter your details and see your resume update instantly. Your information stays in this browser.</p></div>
+<div class="container">
+
+<div class="resume-toolbar"><label>Resume template <select id="templateSelect"><option value="modern">Modern Professional</option><option value="minimal">Simple Minimal</option><option value="student">Student / Fresher</option><option value="executive">Executive Sidebar</option><option value="creative">Creative Portfolio</option><option value="compact">Compact Two-Column</option></select></label><div class="toolbar-actions"><button class="btn secondary" id="printResume">Print / Save as PDF</button><button class="btn ghost" id="clearResume">Clear form</button></div></div>
+<div class="resume-layout">
+<form class="resume-form" id="resumeForm">
+<fieldset><legend>Personal information</legend><div class="form-grid">
+<label class="span-two">Profile photo <input accept="image/jpeg,image/png,image/webp" id="resumePhoto" type="file"/></label>
+<label>Full name<input data-bind="name" placeholder="Alex Morgan"/></label><label>Professional title<input data-bind="title" placeholder="Marketing Assistant"/></label>
+<label>Email<input data-bind="email" placeholder="alex@email.com" type="email"/></label><label>Phone number<input data-bind="phone" placeholder="+880 1XXXXXXXXX"/></label>
+<label>Address<input data-bind="address" placeholder="Dhaka, Bangladesh"/></label><label>LinkedIn profile<input data-bind="linkedin" placeholder="linkedin.com/in/username"/></label>
+<label class="span-two">Portfolio website<input data-bind="portfolio" placeholder="www.yoursite.com"/></label>
+<label class="span-two">Profile summary<textarea data-bind="summary" placeholder="Write a short professional introduction..." rows="3"></textarea></label>
+</div></fieldset>
+<fieldset><legend>Education <button class="small-add" id="addEducation" type="button">+ Add</button></legend><div id="educationFields"></div></fieldset>
+<fieldset><legend>Work experience <button class="small-add" id="addExperience" type="button">+ Add</button></legend><div id="experienceFields"></div></fieldset>
+<fieldset><legend>Skills</legend><label>Add skills (separate with commas)<input data-bind="skills" placeholder="Communication, Excel, Teamwork"/></label></fieldset>
+<fieldset><legend>Projects <button class="small-add" id="addProject" type="button">+ Add</button></legend><div id="projectFields"></div></fieldset>
+<fieldset><legend>Languages</legend><label>Languages (separate with commas)<input data-bind="languages" placeholder="English, Bengali"/></label></fieldset>
+<fieldset><legend>Certifications <button class="small-add" id="addCertification" type="button">+ Add</button></legend><div id="certificationFields"></div></fieldset>
+</form>
+<div class="resume-preview-wrap"><div class="preview-label">LIVE PREVIEW <span>Changes update automatically</span></div><article aria-label="Live resume preview" class="resume-paper template-modern" id="resumePreview"></article></div>
+</div>
+</div>
+</div></section></main><footer class="site-footer"><div class="container footer-grid"><div><a class="brand footer-brand" href="index.html"><span class="brand-mark">P</span><span>PixelCV <b>Studio</b></span></a><p>Free Tools. Better Images. Better Resumes.</p></div><div class="footer-links"><a href="index.html">Home</a><a href="image-tools.html">Image Tools</a><a href="resume.html">Resume Builder</a><a href="index.html#about">About Us</a><a href="index.html#contact">Contact Us</a><a href="index.html#privacy">Privacy Policy</a><a href="index.html#terms">Terms and Conditions</a></div></div><div class="container copyright">© <span id="year"></span> PixelCV Studio. All rights reserved.</div></footer><script src="script.js"></script></body></html>

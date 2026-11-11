@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Image Cropper | PixelCV Studio</title><meta name="description" content="Crop images with a movable and resizable selection frame."><meta name="robots" content="index,follow"><meta name="theme-color" content="#7952d5"><link rel="stylesheet" href="style.css"></head>
+<body><header class="site-header"><div class="container nav-wrap">
+<a class="brand" href="index.html" aria-label="PixelCV Studio home"><span class="brand-mark">P</span><span>PixelCV <b>Studio</b></span></a>
+<button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+<nav id="mainNav" aria-label="Main navigation"><a href="index.html">Home</a><a href="image-tools.html" class="active" aria-current="page">Image Tools</a><a href="resume.html">Resume Builder</a><a href="index.html#about">About Us</a><a href="index.html#contact">Contact</a></nav></div></header><main><section class="section container tool-page-section"><div class="section-heading"><span class="eyebrow">IMAGE TOOL 03</span><h1>Image Cropper</h1><p>Crop images with a movable and resizable selection frame.</p></div><section class="workspace" id="cropper">
+<div class="tool-title"><div><span class="eyebrow">TOOL 03</span><h3>Image Cropper</h3><p>Drag the crop frame over the image to select the area you want.</p></div><span class="tool-icon">▧</span></div>
+<div class="tool-layout">
+<div class="tool-controls">
+<label class="upload-box" for="cropFile"><strong>＋ Choose an image</strong><span>JPG, PNG, WebP · Maximum 15 MB</span></label><input accept="image/jpeg,image/png,image/webp" class="file-input" id="cropFile" type="file"/>
+<div class="field"><label for="cropRatio">Crop aspect ratio</label><select id="cropRatio"><option value="free">Free</option><option value="1:1">1:1 Square</option><option value="4:3">4:3</option><option value="16:9">16:9</option><option value="3:2">3:2</option></select></div>
+<p class="hint">Drag inside the frame to move it. Drag its bottom-right handle to resize it.</p>
+<button class="btn primary full" disabled="" id="cropBtn">Crop image</button><button class="btn ghost full" id="cropReset">Reset</button><p aria-live="polite" class="hint" id="cropStatus">Choose an image to begin.</p>
+</div>
+<div class="crop-stage-wrap"><div class="crop-stage" id="cropStage"><img alt="Image to crop" id="cropImage"/><div class="crop-box" id="cropBox"><span class="crop-handle"></span></div></div><div class="preview-card crop-result"><h4>Cropped result</h4><img alt="Cropped image preview" id="cropResult"/><p id="cropResultInfo">Your result will appear here</p><a class="btn secondary full disabled-link" download="pixelcv-cropped.png" id="cropDownload">Download result</a></div></div>
+</div>
+</section></section></main><footer class="site-footer"><div class="container footer-grid"><div><a class="brand footer-brand" href="index.html"><span class="brand-mark">P</span><span>PixelCV <b>Studio</b></span></a><p>Free Tools. Better Images. Better Resumes.</p></div><div class="footer-links"><a href="index.html">Home</a><a href="image-tools.html">Image Tools</a><a href="resume.html">Resume Builder</a><a href="index.html#about">About Us</a><a href="index.html#contact">Contact Us</a><a href="index.html#privacy">Privacy Policy</a><a href="index.html#terms">Terms and Conditions</a></div></div><div class="container copyright">© <span id="year"></span> PixelCV Studio. All rights reserved.</div></footer><script src="script.js"></script></body></html>
