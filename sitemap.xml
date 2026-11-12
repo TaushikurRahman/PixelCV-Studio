@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://taushikurrahman.github.io/PixelCV-Studio/</loc><lastmod>2026-11-12</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://taushikurrahman.github.io/PixelCV-Studio/image-tools.html</loc><lastmod>2026-11-12</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://taushikurrahman.github.io/PixelCV-Studio/image-compressor.html</loc><lastmod>2026-11-12</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://taushikurrahman.github.io/PixelCV-Studio/image-resizer.html</loc><lastmod>2026-11-12</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://taushikurrahman.github.io/PixelCV-Studio/image-cropper.html</loc><lastmod>2026-11-12</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://taushikurrahman.github.io/PixelCV-Studio/image-converter.html</loc><lastmod>2026-11-12</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://taushikurrahman.github.io/PixelCV-Studio/resume.html</loc><lastmod>2026-11-12</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://taushikurrahman.github.io/PixelCV-Studio/</loc></url>
+  <url><loc>https://taushikurrahman.github.io/PixelCV-Studio/image-tools.html</loc></url>
+  <url><loc>https://taushikurrahman.github.io/PixelCV-Studio/image-compressor.html</loc></url>
+  <url><loc>https://taushikurrahman.github.io/PixelCV-Studio/image-resizer.html</loc></url>
+  <url><loc>https://taushikurrahman.github.io/PixelCV-Studio/image-cropper.html</loc></url>
+  <url><loc>https://taushikurrahman.github.io/PixelCV-Studio/image-converter.html</loc></url>
+  <url><loc>https://taushikurrahman.github.io/PixelCV-Studio/resume.html</loc></url>
 </urlset>
